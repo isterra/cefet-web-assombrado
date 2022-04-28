@@ -202,7 +202,12 @@ a:active {
   position: relative;
   cursor: pointer;
 }
-
+article[class*="novidade"]::before{
+  content: "Novidade!";
+  background: green;
+  padding: 0.27%;
+  border-radius: 5px;
+}
 
 
 
