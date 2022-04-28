@@ -167,7 +167,6 @@ a:active {
   box-shadow: -4px 0 10px rgba(0, 0, 0, 0.5);
   text-align: center;
   box-sizing: border-box;
-
 }
 
 #tags h1 {
@@ -194,7 +193,15 @@ a:active {
 .tag-3 {
   font-size: 150%;
 }
-
+#tags span{
+  user-select: none;
+}
+#tags span:active {
+  bottom: 2px;
+  right: 2px;
+  position: relative;
+  cursor: pointer;
+}
 
 
 
