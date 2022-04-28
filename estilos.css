@@ -6,7 +6,8 @@ body {
   font-family: monospace;
 }
 
-h1, h2 {
+h1,
+h2 {
   margin: 0;
 }
 
@@ -18,7 +19,7 @@ h2 {
   font-family: "Aldrich", sans-serif;
 }
 
-h1 + h2 {
+h1+h2 {
   font-size: 100%;
   margin-top: 0.5em;
   color: silver;
@@ -43,14 +44,32 @@ a:active {
 
 /* --- Cabeçalho --- */
 #cabecalho {
+  padding-left: 0px;
+
   background-color: rgba(0, 0, 0, .95);
-  box-shadow: 2px 10px 10px rgba(0,0,0, .25);
+  box-shadow: 2px 10px 10px rgba(0, 0, 0, .25);
   padding-top: 1em;
   text-align: center;
 }
 
 #cabecalho ul {
   background-color: rgba(0, 204, 147, 0.53);
+  list-style-type: none;
+}
+
+#cabecalho li {
+  display: inline-block;
+  margin-left: 2%;
+}
+
+#cabecalho li a {
+  display: inline-block;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#cabecalho li a:hover {
+  color: white;
 }
 
 #cabecalho a {
@@ -216,7 +235,7 @@ a:active {
   width: 100%;
 }
 
-.backdrop.desaparecido + #unmute {
+.backdrop.desaparecido+#unmute {
   display: none;
 }
 
